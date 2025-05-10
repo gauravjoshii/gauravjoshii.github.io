@@ -10,54 +10,217 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-     <div class="hero-header">
+    <header>
         <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-g"></i>
-                    <div class="logo-text">Gaurav Joshi</div>
+            <div class="logo">
+                <i class="fa-solid fa-g"></i>
+                <div class="logo-text">Gaurav Joshi</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero-header">
+        <div class="wrapper">
             <div class="container">
-                 <div class="hero-pic">
+                <div class="hero-pic">
                     <img src="images/main_photo.jpg" alt="profile pic">
-                 </div>
-                 <div class="hero-text">
-                    <h5>Hi I'm <span class="input">Associate Product Security Engineer</span></h5>
+                </div>
+                <div class="hero-text">
+                    <h5>Hi, I'm <span class="input">Product Security Engineer - II</span></h5>
                     <h1>Gaurav Joshi</h1>
-                    <p> Associate Product Security Engineer with about 2 years of experience in vulnerability management, network penetration testing, and cloud security posture management. Skilled in secure code review, SAST, and Kubernetes security assessments.
-                    </p>
+                    <p>Product Security Engineer with over 3 years of experience in vulnerability management, network penetration testing, and cloud security posture management. Skilled in Red Teaming, Kubernetes security assessments, and secure code review.</p>
 
                     <div class="btn-group">
-                       <a href="#" class="btn active">Download CV</a>
-                       <a href="#" class="btn">Contact</a>
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#contact" class="btn">Contact</a>
                     </div>
 
                     <div class="social">
                         <a href="https://www.linkedin.com/in/gauravjoshii"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/gauravjoshii"><i class="fa-brands fa-github"></i></a>
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
-     </div>
-     <!---typed js for typing text effect-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-     <script>
+    </div>
+
+    <section id="summary">
+        <div class="wrapper">
+            <h2>Summary</h2>
+            <p>Product Security Engineer - II with over 3 years of experience in vulnerability management, network penetration testing, and cloud security posture management. Skilled in Red Teaming, Kubernetes security assessments, and secure code review.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="wrapper">
+            <h2>Experience</h2>
+            <div class="experience-timeline">
+                <div class="job">
+                    <h3>Product Security Engineer - II</h3>
+                    <h4>Highradius | January 2025 - Present</h4>
+                    <ul>
+                        <li>Conducting in-depth cloud penetration testing on AWS and GCP environments, identifying and exploiting misconfigurations.</li>
+                        <li>Engaged in CSPM initiatives, helping remediate misconfigurations and strengthen cloud security posture.</li>
+                        <li>Red Teaming assessments in multi-cloud environments, focusing on escalation, lateral movement, and post-exploitation.</li>
+                        <li>Conduct security hardening and provided recommendations for security controls.</li>
+                        <li>Enhanced vulnerability management and Attack surface management.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Associate Product Security Engineer - II</h3>
+                    <h4>Highradius | July 2024 - December 2024</h4>
+                    <ul>
+                        <li>Conducted vulnerability assessments using WIZ and Nessus.</li>
+                        <li>Developed adversary simulations to mimic sophisticated offensive TTP's.</li>
+                        <li>Conducted cloud penetration testing across AWS and GCP.</li>
+                        <li>Executed vulnerability triage processes in multi-cloud settings.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Associate Product Security Engineer - I</h3>
+                    <h4>Highradius | June 2023 - June 2024</h4>
+                    <ul>
+                        <li>Addressing critical vulnerabilities in cloud environments using Wiz.</li>
+                        <li>Performed internal and external network penetration tests.</li>
+                        <li>Conducted vulnerability assessments with Nessus.</li>
+                        <li>Administered quarterly patch management activities.</li>
+                        <li>Improved 70+ Kubernetes clusters security assessment.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Product Security Intern</h3>
+                    <h4>Highradius | September 2022 - May 2023</h4>
+                    <ul>
+                        <li>Improved Checkmarx tool to 80% accuracy with custom queries.</li>
+                        <li>Created secure code examples for product development teams.</li>
+                        <li>Performed Web and API penetration testing.</li>
+                        <li>Triaged 5000+ security findings.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="wrapper">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>SCAGoat - Damn Vulnerable Application</h3>
+                <p>Designed and collaborated on the SCAGoat project, a deliberately vulnerable application for security training and testing. <a href="https://github.com/harekrishnarai/Damn-vulnerable-sca">View on GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="wrapper">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Security Testing</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Network Penetration Testing</span>
+                        <span class="skill-tag">Vulnerability Assessment</span>
+                        <span class="skill-tag">Red Teaming</span>
+                        <span class="skill-tag">SAST</span>
+                        <span class="skill-tag">API Security Testing</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud Security</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">AWS Security</span>
+                        <span class="skill-tag">GCP Security</span>
+                        <span class="skill-tag">CSPM</span>
+                        <span class="skill-tag">Cloud Penetration Testing</span>
+                        <span class="skill-tag">Kubernetes Security</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Wiz</span>
+                        <span class="skill-tag">Checkmarx</span>
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Kali Linux</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Nessus</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Vulnerability Management</span>
+                        <span class="skill-tag">Security Architecture</span>
+                        <span class="skill-tag">Risk Assessment</span>
+                        <span class="skill-tag">Secure Code Review</span>
+                        <span class="skill-tag">Incident Response</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="wrapper">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <span class="year">2023</span>
+                    <h3>Certified Red Team Professional (CRTP)</h3>
+                    <div class="issuer">
+                        <i class="fas fa-certificate"></i>
+                        Altered Security
+                    </div>
+                    <p>Advanced penetration testing and cyberattack simulation certification focused on Active Directory exploitation.</p>
+                </div>
+                <div class="certification-card">
+                    <span class="year">2023</span>
+                    <h3>Certified Appsec Practitioner (CAP)</h3>
+                    <div class="issuer">
+                        <i class="fas fa-certificate"></i>
+                        The SecOps Group
+                    </div>
+                    <p>Specialized certification in application security testing and secure development practices.</p>
+                </div>
+                <div class="certification-card">
+                    <span class="year">2023</span>
+                    <h3>Certified Cloud Security Practitioner - AWS</h3>
+                    <div class="issuer">
+                        <i class="fas fa-certificate"></i>
+                        The SecOps Group
+                    </div>
+                    <p>Expertise in AWS cloud security practices and cloud penetration testing methodologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+            <h2>Contact</h2>
+            <p>Email: gauravsharma3876@gmail.com</p>
+            <p>Phone: +9190XXXXXX52</p>
+            <p>Location: Hyderabad, India</p>
+        </div>
+    </section>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
         /** creating button click show hide navbar **/
         var togglebtn=document.querySelector(".togglebtn");
         var nav=document.querySelector(".navlinks");
@@ -69,11 +232,11 @@
         })
 
         var typed=new Typed(".input",{
-            strings:["Associate Product Security Engineer","Network Penetration Tester","Cloud Security Specialist"],
+            strings:["Product Security Engineer - II","Network Penetration Tester","Cloud Security Specialist"],
             typedSpeed:70,
             backSpeed:55,
             loop:true
         })
-     </script>
+    </script>
 </body>
 </html>
