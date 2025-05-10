@@ -489,20 +489,20 @@ section h2 {
 }
 /* Skills Section */
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
 }
 .skill-category {
     background: var(--card-bg);
-    padding: 30px;
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 16px;
     box-shadow: var(--shadow);
-    flex: 1;
-    min-width: 260px;
-    max-width: calc(50% - 20px);
-    border: 1px solid var(--border-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.skill-category:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 .skill-category h3 {
     color: var(--primary-color);
@@ -528,21 +528,27 @@ section h2 {
     flex-wrap: wrap;
     gap: 10px;
 }
+/* Glossy effect for skill tags */
 .skill-tag {
-    background: var(--tag-bg);
-    color: var(--text-color);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.95rem;
-    transition: all 0.3s;
-    border: 1px solid var(--border-color);
-    font-weight: 500;
-    letter-spacing: 0.02em;
-}
-.skill-tag:hover {
-    background: var(--tag-hover);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     color: #fff;
-    box-shadow: 0 5px 15px rgba(96, 165, 250, 0.18);
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-tag i {
+    font-size: 1rem;
+}
+
+.skill-tag:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 /* Certifications Section */
 .certifications-grid {
