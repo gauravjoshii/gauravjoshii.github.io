@@ -57,12 +57,7 @@
         </div>
     </div>
 
-    <section id="summary">
-        <div class="wrapper">
-            <h2>Summary</h2>
-            <p>Product Security Engineer - II with over 3 years of experience in vulnerability management, network penetration testing, and cloud security posture management. Skilled in Red Teaming, Kubernetes security assessments, and secure code review.</p>
-        </div>
-    </section>
+    <!-- Removed the summary section -->
 
     <section id="experience">
         <div class="wrapper">
@@ -117,9 +112,14 @@
     <section id="projects">
         <div class="wrapper">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>SCAGoat - Damn Vulnerable Application</h3>
-                <p>Designed and collaborated on the SCAGoat project, a deliberately vulnerable application for security training and testing. <a href="https://github.com/harekrishnarai/Damn-vulnerable-sca">View on GitHub</a></p>
+            <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;">
+                <div class="project-card" style="background: var(--card-bg); border-radius: 16px; box-shadow: var(--shadow); padding: 28px 24px; position: relative; overflow: hidden; border: 1px solid var(--border-color);">
+                    <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));"></div>
+                    <h3 style="color: var(--primary-color); font-size: 1.25rem; margin-bottom: 10px;">SCAGoat - Damn Vulnerable Application</h3>
+                    <p style="color: var(--light-text); margin-bottom: 18px;">Designed and co-developed SCAGoat, a deliberately vulnerable application for security training and testing. Empowered security teams to identify and remediate SCA flaws, and presented at Defcon 32, BlackHat Europe, and C0c0n.</p>
+                    <a href="https://github.com/harekrishnarai/Damn-vulnerable-sca" target="_blank" class="btn active" style="margin-bottom: 0;">View on GitHub</a>
+                </div>
+                <!-- Add more project cards here if needed -->
             </div>
         </div>
     </section>
@@ -213,9 +213,17 @@
     <section id="contact">
         <div class="wrapper">
             <h2>Contact</h2>
-            <p>Email: gauravsharma3876@gmail.com</p>
-            <p>Phone: +9190XXXXXX52</p>
-            <p>Location: Hyderabad, India</p>
+            <div class="contact-card" style="background: var(--card-bg); border-radius: 18px; box-shadow: var(--shadow); padding: 36px 32px; max-width: 600px; margin: 0 auto; text-align: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 18px;">
+                    <a href="mailto:gauravsharma3876@gmail.com" style="color: var(--primary-color); font-size: 1.15rem; display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 500;"><i class="fa-solid fa-envelope"></i> gauravsharma3876@gmail.com</a>
+                    <div style="color: var(--primary-color); font-size: 1.15rem; display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-phone"></i> +9190XXXXXX52</div>
+                    <div style="color: var(--primary-color); font-size: 1.15rem; display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</div>
+                </div>
+                <div style="margin-top: 28px; display: flex; justify-content: center; gap: 24px;">
+                    <a href="https://www.linkedin.com/in/gauravjoshii" target="_blank" style="color: var(--primary-color); font-size: 2rem;"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/gauravjoshii" target="_blank" style="color: var(--primary-color); font-size: 2rem;"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </section>
     <!---typed js for typing text effect-->
