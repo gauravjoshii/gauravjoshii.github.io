@@ -916,3 +916,18 @@ section h2 {
         gap: 6px;
     }
 }
+@media (max-width: 768px) {
+    .conf-card {
+        padding: 16px;
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+    }
+
+    .conf-meta span {
+        margin-bottom: 8px;
+    }
+
+    .conf-talk {
+        margin-bottom: 12px;
+    }
+}
