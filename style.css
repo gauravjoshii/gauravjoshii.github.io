@@ -852,3 +852,61 @@ section h2 {
         height: 36px;
     }
 }
+
+/* Responsive Conference Calendar */
+.conf-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    border: none;
+    margin-left: 0;
+    padding-left: 0;
+    justify-content: flex-start;
+}
+.conf-card {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.conf-timeline-dot { display: none; }
+@media (max-width: 900px) {
+    .conf-timeline {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .conf-card {
+        padding: 18px 10px 12px 10px;
+    }
+}
+@media (max-width: 600px) {
+    .conf-timeline {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .conf-card {
+        padding: 10px 2vw 8px 2vw;
+        border-radius: 10px;
+    }
+    .conf-header {
+        gap: 7px;
+    }
+    .conf-logo {
+        width: 24px;
+        height: 24px;
+    }
+    .conf-year {
+        font-size: 0.8rem;
+        padding: 2px 7px;
+    }
+    .conf-title {
+        font-size: 0.97rem;
+    }
+    .conf-talk {
+        font-size: 0.93rem;
+    }
+    .conf-meta {
+        font-size: 0.89rem;
+        gap: 6px;
+    }
+}
